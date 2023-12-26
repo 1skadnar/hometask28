@@ -21,7 +21,7 @@ class Page1 extends StatelessWidget {
             CircleAvatar(backgroundImage:AssetImage( 'assets/images/welcome.png'
             ))
           ],
-        ),
+        ),//
       ),
     );
   }
