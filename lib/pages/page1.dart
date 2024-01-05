@@ -6,20 +6,17 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 10), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacementNamed(context, '/page2');
     });
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Welcome')),
+      appBar: AppBar(title: const Text('')),
       body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('COFFEE ISKOO '),
-            SizedBox(height: 20),
-            CircleAvatar(backgroundImage:AssetImage( 'assets/images/welcome.png'
-            ))
+            Image(image: AssetImage('assets/images/img.png'))
           ],
         ),//
       ),

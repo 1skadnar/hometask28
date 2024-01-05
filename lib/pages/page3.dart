@@ -7,20 +7,21 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 3'),
+        title: const Text(''),
+        leading:IconButton(
+          icon: const Icon(Icons.menu , size: 47,),
+          onPressed: () {
+            // Logic for menu action
+          },
+        ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.search),
+            icon: const Icon(Icons.search, size: 47,),
             onPressed: () {
               // Logic for search action
             },
           ),
-          IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              // Logic for menu action
-            },
-          ),
+
         ],
       ),
       body: Center(
@@ -31,8 +32,19 @@ class Page3 extends StatelessWidget {
               "It's a Great Day For Coffee",
               style: TextStyle(fontSize: 45),
             ),
-            const SizedBox(height: 20),
-            buildCoffeeItem(context, 'assets/images/espresso.png', 'Espresso', '/page4'),
+            const SizedBox(height: 150),
+
+            const Row(
+              children: [
+                Image(
+                  image: AssetImage('assets/images/espresso.png'),
+                  width: 80,
+                  height: 80,
+                ),
+                Text('Espresso'),
+                //IconButton(icon: Icon(Icons.cabin), onPressed: () {Navigator.push(context, Page4)  },),
+              ],
+            ),
             buildCoffeeItem(context, 'assets/images/cappuccino.png', 'Cappuccino', '/page5'),
             buildCoffeeItem(context, 'assets/images/macchiato.png', 'Macchiato', '/page6'),
             buildCoffeeItem(context, 'assets/images/mocha.png', 'Mocha', '/page7'),

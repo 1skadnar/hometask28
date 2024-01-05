@@ -53,7 +53,7 @@ class _Page6State extends State<Page6> {
               children: [
                 ElevatedButton(
                   onPressed: () => updateQuantity(1),
-                  child: const Icon(Icons.add),
+                  child: const Icon(Icons.remove),
                 ),
                 Text(
                   'Miqdori : $quantity',
@@ -61,7 +61,7 @@ class _Page6State extends State<Page6> {
                 ),
                 ElevatedButton(
                   onPressed: () => updateQuantity(-1),
-                  child: const Icon(Icons.remove),
+                  child: const Icon(Icons.add),
                 ),
               ],
             ),
