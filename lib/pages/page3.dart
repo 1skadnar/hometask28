@@ -11,7 +11,6 @@ class Page3 extends StatelessWidget {
         leading:IconButton(
           icon: const Icon(Icons.menu , size: 47,),
           onPressed: () {
-            // Logic for menu action
           },
         ),
         actions: [
